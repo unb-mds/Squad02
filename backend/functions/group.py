@@ -1,9 +1,9 @@
 import os
 from collections import defaultdict
-from .search import buscarValor
-from .name import verNomeMunicipio
-from .schedule import meseano
-from .regex import regexMunicipio
+from search import buscarValor
+from name import verNomeMunicipio
+from schedule import meseano
+from regex import regexMunicipio
 
 def agrupar(pasta):
     if not os.path.isdir(pasta):
