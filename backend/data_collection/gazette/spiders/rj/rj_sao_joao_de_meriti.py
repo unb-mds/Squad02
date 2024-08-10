@@ -2,6 +2,8 @@ import datetime as dt
 
 from gazette.items import Gazette
 from gazette.spiders.base import BaseGazetteSpider
+from calcular_data import Calcular_data
+ano, mes, dia = Calcular_data.calcula_data()
 
 
 class RjSaoJoaoDeMeritiSpider(BaseGazetteSpider):
@@ -10,7 +12,7 @@ class RjSaoJoaoDeMeritiSpider(BaseGazetteSpider):
     allowed_domains = ["transparencia.meriti.rj.gov.br"]
     start_urls = ["https://transparencia.meriti.rj.gov.br/diario_oficial_get.php"]
     BASE_URL = "https://transparencia.meriti.rj.gov.br/ver20230623/WEB-ObterAnexo.rule?sys=LAI&codigo="
-    start_date = dt.date(2023, 1, 1)
+    start_date = dt.date(ano, mes, dia)
     custom_settings = {"DOWNLOAD_DELAY": 0.5, "RANDOMIZE_DOWNLOAD_DELAY": True}
 
     def parse(self, response):

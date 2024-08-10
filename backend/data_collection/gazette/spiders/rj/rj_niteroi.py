@@ -4,6 +4,8 @@ import scrapy
 
 from gazette.items import Gazette
 from gazette.spiders.base import BaseGazetteSpider
+from calcular_data import Calcular_data
+ano, mes, dia = Calcular_data.calcula_data()
 
 
 class RjNiteroiSpider(BaseGazetteSpider):
@@ -12,7 +14,7 @@ class RjNiteroiSpider(BaseGazetteSpider):
     allowed_domains = ["niteroi.rj.gov.br"]
     start_urls = ["http://www.niteroi.rj.gov.br"]
     download_url = "http://www.niteroi.rj.gov.br/wp-content/uploads/do/{}/{}/{:02d}.pdf"
-    start_date = dt.date(2023, 1, 1)
+    start_date = dt.date(ano, mes, dia)
     end_date = dt.date.today()
 
     month_names = [

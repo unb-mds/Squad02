@@ -1,10 +1,13 @@
 from datetime import date, datetime
+from calcular_data import Calcular_data
 
 import scrapy
 from dateutil.rrule import MONTHLY, rrule
 
 from gazette.items import Gazette
 from gazette.spiders.base import BaseGazetteSpider
+data = Calcular_data()
+ano, mes, dia = data.calcula_data()
 
 
 class RjBelfordRoxoSpider(BaseGazetteSpider):
@@ -13,7 +16,7 @@ class RjBelfordRoxoSpider(BaseGazetteSpider):
     allowed_domains = ["transparencia.prefeituradebelfordroxo.rj.gov.br"]
     BASE_URL = "https://transparencia.prefeituradebelfordroxo.rj.gov.br/webrun/WEB-ObterAnexo.rule?sys=LAI&codigo={ATTACHMENT_CODE}"
 
-    start_date = date(2023, 1, 1)
+    start_date = date(ano, mes, dia)
 
     def start_requests(self):
         url = "https://transparencia.prefeituradebelfordroxo.rj.gov.br/diario_oficial_get.php"

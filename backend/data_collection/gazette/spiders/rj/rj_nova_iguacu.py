@@ -5,13 +5,15 @@ from dateutil.rrule import DAILY, rrule
 
 from gazette.items import Gazette
 from gazette.spiders.base import BaseGazetteSpider
+from calcular_data import Calcular_data
+ano, mes, dia = Calcular_data.calcula_data()
 
 
 class RjNovaIguacu(BaseGazetteSpider):
     TERRITORY_ID = "3303500"
     name = "rj_nova_iguacu"
     allowed_domains = ["novaiguacu.rj.gov.br"]
-    start_date = dt.date(2023, 1, 1)
+    start_date = dt.date(ano, mes, dia)
     BASE_URL = "https://www.novaiguacu.rj.gov.br/diario-oficial/"
 
     def start_requests(self):
