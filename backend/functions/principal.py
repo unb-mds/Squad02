@@ -1,13 +1,14 @@
-from .group import agrupar
-from .sums import salvarSomas
+from group import agrupar
+from sums import salvarSomas
 
 def principal():
-    pasta = "../.gitignore/arquivos_renomeados"
+    pasta_arquivos = "./../.gitignore/arquivos_renomeados"
+    pasta_saida = "./Front end/src/components/public "  # Substitua pelo caminho desejado
     
-    somasTotais = agrupar(pasta)
+    somasTotais = agrupar(pasta_arquivos)
     
     if somasTotais:
-        salvarSomas(pasta, somasTotais)
+        salvarSomas(pasta_saida, somasTotais)
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     principal()

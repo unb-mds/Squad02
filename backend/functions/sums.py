@@ -1,9 +1,13 @@
 import os
 import json
 from collections import defaultdict
-from .format import formatar
+from format import formatar
 
 def salvarSomas(pasta, somasTotais):
+    # Certifique-se de que a pasta de saída existe
+    if not os.path.exists(pasta):
+        os.makedirs(pasta)
+
     dados = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
 
     for municipio, somasAnoMes in somasTotais.items():
