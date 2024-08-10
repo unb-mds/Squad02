@@ -10,5 +10,5 @@ def principal():
     if somasTotais:
         salvarSomas(pasta_saida, somasTotais)
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     principal()
