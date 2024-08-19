@@ -1,62 +1,89 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 80vw;
+    height: 650px;
+    margin-bottom: 10%;
     align-items: center;
-    justify-content: center;
-
-    @media (max-width: 768px) {
+    
+    @media (max-width: 500px) {
         margin: 32px;
+
     }
 
-    @media (max-width: 480px) {
-        .principal_text {
-            font-size: 24px;
-        }
-
-        .button {
-            margin: auto;
-            font-size: 20px;
-            line-height: 30px;
-            
-        }
-    }
-
-    .image {
+    .conteudo{
+        position: absolute;
+        margin-top: 0px;
+        
+        width: 70vw;
+        height: auto;
+        margin-left: 15vw;
         display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
+    
+    }
+    
+    .textos{
+        height: 500px;
+        width: 500px;
+        display: flex;
         align-items: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding-top: 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 70px;
+        position: absolute;
+        margin-left: 7%;
+    }
+
+    .fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem ao tamanho do container */
+    position: absolute; /* Permite que outros elementos sejam sobrepostos */
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 10vw;
+    border-radius: 20px;
+    }
+
+    .mulher, .principal_text, .button {
+    position: absolute; /* Sobrepõe esses elementos na imagem de fundo */
+    z-index: 2; /* Garante que estes estejam acima da imagem de fundo */
+    }
+
+    .mulher{
+        position: absolute;
+        width: 700px;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 173px;
+            
     }
 
     .principal_text {
-        font-size: 40px;
+        font-size: 2vw;
         weight: 400;
         text-align: center;
-        height: 125px;
+        height: auto;
         font-family: Newake;
-        transform: translate(-50%, -330%);
         color: #FFFFFF;
+        width: 30vw;
+        
     }
 
     .button {
-        transform: translate(-110%, -680%);
         cursor: pointer;
-        margin: auto;
-        height: 62px;
         border: none;
         color: #7A41C9;
         background-color: #FFCA00;
         font-family: Poppins;
-        font-size: 27.07px;
+        font-size: 2vw;
         text-align: center;
         line-height: 40.61px;
         font-weight: 700;
         border-radius: 10px;
-        width: 218px;
+        width: 15vw;
+        margin-top: 150px;
     }
 `;
