@@ -60,7 +60,7 @@ export const Container = styled.div`
 
         .conteudo{
             all: unset;
-            margin: 2vw 0 0 0;
+            margin: 2vw auto;
             display: flex;
             flex-direction: column;
             
