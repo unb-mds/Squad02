@@ -1,4 +1,3 @@
-import imagem from '../../../assets/images/Group 10.png';
 import mulher from '../../../assets/images/mulher.png';
 import fundo from '../../../assets/images/Component 7.png';
 import { Container } from './inicial';
@@ -6,9 +5,9 @@ import { StyledLink } from "../navbar/navbar";
 
 const Inicial = () => {
     return(
-    <div className='div'>
-        <Container>
-        <img src={fundo} alt="fundo" className='fundo'/>
+    <div>
+        <Container className='container'>
+        
         <div className='conteudo'>
             <div>
                 <img src={mulher} alt="mulher" className='mulher'/>
