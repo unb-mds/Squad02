@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ApexCharts from 'react-apexcharts';
 import jsonData from '../public/somasTotais.json';
 
+
 export default function Chart() {
     const [series, setSeries] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -87,6 +88,26 @@ export default function Chart() {
                 right: 20
             }
         },
+        
+        responsive: [
+            {
+                breakpoint: 700,
+                options: {
+                    plotOptions: {
+                        bar: {
+                            horizontal: true, // Alterando para horizontal quando a tela é pequena
+                        }
+                    },
+                    dataLabels: {
+                        style: {
+                            fontSize: '10px', // Reduzindo o tamanho dos labels
+                        },
+                        orientation: 'vertical', // Aplica a orientação vertical aos labels
+                        textAnchor: 'middle',
+                    },
+                }
+            }
+        ]
     };
 
     if (loading) {
@@ -95,7 +116,7 @@ export default function Chart() {
 
     return (
         <div style={styles.container}>
-            <h2 style={styles.title}>
+            <h2 style={styles.title} className='texto1'>
                 Quantidade de investimento na área de cultura no estado do Rio de Janeiro
             </h2>
             <div style={styles.buttonContainer}>
