@@ -29,10 +29,11 @@ export const NavBar = styled.div`
         margin: 0 10px; /* Add margin between buttons */
     }
     @media (max-width: 700px){
-        display: none;
-        .b1, .b2, .b3 {
+        .b1, .b2{
+                display: none;
+        }
+        .b3, .b4{
             
-                display: none;  
         }
     }
 `;
@@ -55,9 +56,6 @@ export const Container = styled.div`
         background-color: #252424;
         border: none;
     }
-    @media (max-width: 700px){
-        
-    }
 `;
 
 export const StyledLink = styled(Link)`
@@ -74,6 +72,6 @@ export const StyledLink = styled(Link)`
     text-decoration: none; 
 
     @media (max-width: 700px){
-        display: none;
+        
     }
 `;

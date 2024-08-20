@@ -19,7 +19,7 @@ const Navbar = () => {
             <Container className="inicio">
                 <Button_search />
                 <NavBar>
-                    <button className="b1" onClick={() => scrollToPosition(31)}>Sobre</button>
+                    <button className="b1" onClick={() => scrollToPosition(30)}>Sobre</button>
                     <button className="b2" onClick={() => scrollToPosition(61)}>Informações</button>
                     <StyledLink to="/integrantes" className="b3">Equipe</StyledLink>
                     <StyledLink to="/grafico" className="b4">Licitações</StyledLink>
