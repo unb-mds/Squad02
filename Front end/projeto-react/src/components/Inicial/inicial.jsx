@@ -5,12 +5,14 @@ export const Container = styled.div`
     width: 80vw;
     height: 650px;
     margin-bottom: 10%;
-    align-items: center;
+    margin-left: 10%;
     
-    @media (max-width: 500px) {
-        margin: 32px;
+    @media only screen and (max-width: 600px) {
+    .fundo {
+        display: none;
 
     }
+}
 
     .conteudo{
         position: absolute;
@@ -18,10 +20,10 @@ export const Container = styled.div`
         
         width: 70vw;
         height: auto;
-        margin-left: 15vw;
+        margin-left: 7vw;
         display: flex;
         flex-direction: row;
-    
+        
     }
     
     .textos{
@@ -33,17 +35,19 @@ export const Container = styled.div`
         flex-direction: column-reverse;
         margin-top: 70px;
         position: absolute;
-        margin-left: 7%;
+        
     }
 
     .fundo {
     width: 100%;
+    min-width: 1200px;
     height: 100%;
     object-fit: cover; /* Ajusta a imagem ao tamanho do container */
     position: absolute; /* Permite que outros elementos sejam sobrepostos */
     margin-top: 50px;
     z-index: 1;
-    margin-left: 10vw;
+
+    margin-right: 5vw;
     border-radius: 20px;
     }
 
@@ -84,6 +88,6 @@ export const Container = styled.div`
         font-weight: 700;
         border-radius: 10px;
         width: 15vw;
-        margin-top: 150px;
+        margin-top: 190px;
     }
 `;
