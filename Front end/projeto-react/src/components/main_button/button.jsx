@@ -21,6 +21,21 @@ export const Container = styled.div`
 
         .logo {
             height: 100%; /* Ajusta a altura da imagem para ocupar toda a altura do botão */
+    
         }
+        .logo2{
+            display: none;
+        }
+    @media (max-width: 700px) {
+        .logo{
+            display: none;
+        }
+
+        .logo2{
+            display: block;
+        }
+
+        
+    }
     }
 `;

@@ -28,6 +28,14 @@ export const NavBar = styled.div`
         text-align: center; /* Center the text inside the buttons */
         margin: 0 10px; /* Add margin between buttons */
     }
+    @media (max-width: 700px){
+        .b1, .b2{
+                display: none;
+        }
+        .b3, .b4{
+            
+        }
+    }
 `;
 
 export const Container = styled.div`
@@ -62,4 +70,8 @@ export const StyledLink = styled(Link)`
     text-align: center; 
     margin: 0 10px; 
     text-decoration: none; 
+
+    @media (max-width: 700px){
+        
+    }
 `;

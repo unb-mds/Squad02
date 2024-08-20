@@ -1,15 +1,25 @@
-import imagem from '../../../assets/images/Group 10.png';
+import mulher from '../../../assets/images/mulher.png';
+import mulher2 from '../../../assets/images/mulher2.png';
 import { Container } from './inicial';
 import { StyledLink } from "../navbar/navbar";
 
 const Inicial = () => {
     return(
-    <div className='div'>
-        <Container>
-        <img src={imagem} alt="initial_banner" classname="image"/>
-        <a className='principal_text'>Transparência cultural ao <br/>alcance de um clique.</a>
+    <div>
+        <Container className='container'>
         
-        <StyledLink to="/grafico" className='button'>clique aqui</StyledLink>
+        <div className='conteudo'>
+            <div>
+                <img src={mulher2} alt="mulher" className='mulher'/>
+            </div>
+            <div className='textos'>    
+                <a className='principal_text'>Transparência cultural ao <br/>alcance de um clique.</a>
+                <StyledLink to="/grafico" className='button'>clique aqui</StyledLink>
+            </div>
+            <div>
+                <img src={mulher} alt="mulher" className='mulher2'/>
+            </div>
+        </div>
         </Container>
     </div>       
     )

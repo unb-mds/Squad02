@@ -11,6 +11,7 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     .about_text_title{
@@ -208,6 +209,44 @@ export const Container = styled.div`
         margin-top: -2%;
     }
 
+    @media (max-width: 700px){
+        overflow-x: hidden;
+        .about_text_title{
+            overflow-x: hidden;
+            all: unset;
+            
+            font-weight: 700;
+            font-size: 8vw;
+            color: white;
+            font-family: Poppins;
+            
+            
+        }
 
+        .about_text{
+            overflow-x: hidden;
+            all: unset;
+            font-weight: 300;
+            font-size: 4vw;
+            color: white;
+            font-family: Poppins;
+            
+            text-justify
+
+            margin: auto;
+            width: 30vw;
+        }
+        .textos{
+            overflow-x: hidden;
+            all: unset;
+            width: 70vw;
+            margin:0 auto;
+            
+        }
+        .imagem1_0,.imagem1_2, .imagem1_3,.imagem1_4, .fourthline, .imagem2_0 , .imagem2_2 , .imagem2_3 , .esquerda,  .direita,.imagem3_1,  .imagem3_2 ,.imagem3_3{
+            display: none;
+        }
+
+    }
 
 `

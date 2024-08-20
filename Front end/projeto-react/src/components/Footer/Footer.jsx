@@ -3,36 +3,66 @@ import styled from 'styled-components'
 export const Container = styled.div` 
 
     .rodape{
-        background-color: #aaa399;
-        height: 5em;
-        margin: 5em 0 0 0;
-    }
-
-    .ancora{
         display: flex;
         align-items: center;
-        gap: 0.7em;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #332e26;
+        margin: 0 0 0 0;
     }
-    .rodape__lista{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-between;
-        align-items: center;
+
+    .texto1{
+        text-align: center;
+        margin-Top: 1vw;
+        padding-top: 1vw ;
+        font-Size: 1vw;
+        font-Family: Poppins;
+        color: #fff;
+    }
+
+    .texto2{
+        text-Align: center;
+        font-Size: 1vw;
+        font-Family: Poppins;
+        color: #fff 
+    }
+
+    .imagem{
+        max-Width: 5vw;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-Top: 0.7vw;
+    }
+
+
+    @media (max-width: 700px) {
+    .texto1{
         
+        width: 80vw;
+        text-align: center;
+        margin-Top: 1vw;
+        padding-top: 1vw ;
+        font-Size: 2vw;
+        font-Family: Poppins;
+        color: #fff;
+        height: auto;
     }
 
-    .links{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif,NEWAKE;
-        font-size: 1.2em;
-        
+    .texto2{
+        text-Align: center;
+        width: 80vw;
+        font-Size: 2vw;
+        font-Family: Poppins;
+        color: #fff 
     }
 
-    .img{
-        max-height: 4em;
-        margin: 0.5em 0 0 0;
+    .imagem{
+        max-Width: 8vw;
+        height: auto;
+        display: block;
+        margin-bottom: 2vw;
+        margin-Top: 0.7vw;
     }
-
+    }
     `
