@@ -2,12 +2,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    
-    
-    display: flex;
-    justify-content: center;
     .conteudo{
-        margin: 4vw auto 10vw auto;
+        margin: 4vw auto 5vw auto;
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
@@ -42,6 +38,7 @@ export const Container = styled.div`
         font-family: Poppins;
         font-size: 1.8vw;
         text-align: center;
+        align-items: center;
         line-height: 40.61px;
         font-weight: 700;
         border-radius: 10px;
@@ -56,6 +53,74 @@ export const Container = styled.div`
         height: auto;
 
         
+    }
+    
+    .mulher2{
+        display: none;
+    }
+    @media (max-width:600px){
+        
+
+        .conteudo{
+            all: unset;
+            margin: 2vw 0 0 0;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            height: 91vw;
+            width: auto;
+            background-image: url('../../../assets/images/Component 6.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .textos{
+        
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        margin-top: ;
+        align-items: center;
+        }
+
+        .principal_text{
+            all: unset;
+            font-size: 5.5vw;
+            margin-top: 14vw;
+            text-align: center;
+            height: auto;
+            font-family: Newake;
+            color: #FFFFFF;
+            width: 65vw;
+        }
+
+        .button{
+        all: unset;
+        cursor: pointer;
+        border: none;
+        color: #7A41C9;
+        background-color: #FFCA00;
+        font-family: Poppins;
+        font-size: 4vw;
+        text-align: center;
+        height: 7vw;
+        font-weight: 700;
+        border-radius: 10px;
+        width: 30vw
+        
+        }
+
+        .mulher{
+            display: none;
+        
+        }
+        .mulher2{
+            display: block;
+            margin-top: 1vw;
+            width: 45vw;
+            height: auto;
+        }
     }
 
 `;
