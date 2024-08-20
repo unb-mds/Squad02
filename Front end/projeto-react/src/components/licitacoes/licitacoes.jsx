@@ -4,28 +4,27 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 50vw;
+
+    .image{
+        width: 70vw;
+    }
 
     .about_text_title{
-        transform: translate(-70%, -520%);
+        transform: translate(-22vw, -34vw);
         display: flex;
-        justify-content: center;
-        height: 110 px;
         font-family: Poppins;
         font-weight: 700;
-        font-size: 73.61px;
-        left: 430px;
+        font-size: 4.3vw;
         color: #1E503F;
     }
 
     .about_text{
-        transform: translate(-55%, -220%);
-        width: 520.63px;
-        height: 273.01px;
+        transform: translate(-18.4vw, -36.5vw);
+        width: 30vw;
         font-family: Poppins;
         font-weight: 400;
-        font-size: 18.14px;
-        left: 300px;
+        font-size: 1.15vw;
         color: #1E503F;
         text-align: justify;   
     }

@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vw;
+    height: 52vw;
     margin-top: 0vw;
     
     .imagem_fundo{
