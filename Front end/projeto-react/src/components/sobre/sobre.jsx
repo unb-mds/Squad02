@@ -5,7 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     height: 52vw;
-    margin-top: 0vw;
+    
     
     .imagem_fundo{
         display: none;
@@ -18,12 +18,16 @@ export const Container = styled.div`
         all: unset;
         display: flex;
         flex-direction: column;
-        margin-top: 10vw;
+        margin: 10vw 0;
         height: auto;
-        width: auto;
+        
+        
+        
         .imagem_fundo{
+            position: relative;
             display: block;
-
+            height: auto;
+            transform: translate(0,4vw);
         }
         .imagem{
             display: none;
@@ -33,15 +37,18 @@ export const Container = styled.div`
 
 export const About = styled.div`
         .about_text_title{
-        transform: translate(17.5vw, -35vw);
-        font-family: Poppins;
+        transform: translate(2.5vw, -36vw);
+        font-family: poppins;
+        position: absolute;
         font-weight: 700;
         font-size: 4.5vw;
         color: #B27100
         }
 
         .about_text{
-        transform: translate(17.5vw, -36vw);
+        margin-top: 13vw;
+        position: absolute;
+        transform: translate(2.5vw, -43vw);
         width: 30vw;
         font-family: Poppins;
         font-weight: 400;
@@ -51,13 +58,16 @@ export const About = styled.div`
         }
 
         @media (max-width: 700px) {
-
+            max-width: fit-content;
+            height: auto;
             .about_text_title{
+                height: auto;
                 transform: translate(16vw, -58vw);
                 font-family: Poppins;
                 font-weight: 700;
                 font-size: 9.5vw;
-                color: #B27100
+                color: #B27100;
+                
             }
 
             .about_text{
@@ -68,6 +78,7 @@ export const About = styled.div`
                 font-size: 2.5vw;
                 color: #B27100;
                 text-align: justify;
+                height: auto;
             }
 
         }

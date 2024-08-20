@@ -9,7 +9,6 @@ const Sobre = () => {
             <Container className="inicio">
                 <img src={image} alt="header" className="imagem" />
                 <img src={fundo} alt="fundo responsivo" className="imagem_fundo"/>
-
                 <About>
                     <p className="about_text_title">Sobre</p>
                     <p className="about_text">Cultura Transparente é uma inovadora ferramenta desenvolvida como parte do curso de
