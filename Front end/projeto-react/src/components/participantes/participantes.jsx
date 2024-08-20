@@ -418,5 +418,23 @@ export const Container = styled.div`
             width: 200px;
             transform: translate(22%, 40%);
         }
+
     }
+
+        @media (max-width:700px){
+            overflow-x: hidden;
+            .equipe1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .equipe2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+                
+            }
+        
 `
