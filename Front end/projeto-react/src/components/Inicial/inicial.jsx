@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .conteudo{
-        margin: 4vw auto 5vw auto;
+        margin: 4vw auto 0 auto;
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
-        height: 700px;
+        height: 45vw;
         width: 70%;
         background-image: url('../../../assets/images/Component 7.png');
         background-size: contain;
@@ -19,6 +19,7 @@ export const Container = styled.div`
         flex-direction: column;
         margin-top: 13vw;
         align-items: center;
+        height: 1vw;
     }
     
     .principal_text{
@@ -32,18 +33,14 @@ export const Container = styled.div`
 
     .button{
         cursor: pointer;
-        border: none;
         color: #7A41C9;
         background-color: #FFCA00;
         font-family: Poppins;
         font-size: 1.8vw;
-        text-align: center;
-        align-items: center;
-        line-height: 40.61px;
         font-weight: 700;
         border-radius: 10px;
         width: 15vw;
-        max-height: 3.6vw;
+        
         
     }
     
@@ -58,7 +55,7 @@ export const Container = styled.div`
     .mulher2{
         display: none;
     }
-    @media (max-width:600px){
+    @media (max-width:700px){
         
 
         .conteudo{
@@ -80,7 +77,6 @@ export const Container = styled.div`
         all: unset;
         display: flex;
         flex-direction: column;
-        margin-top: ;
         align-items: center;
         }
 
