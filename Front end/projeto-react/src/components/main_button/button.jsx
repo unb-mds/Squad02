@@ -32,7 +32,8 @@ export const Container = styled.div`
             display: none;
         }
 
-        .logo2{
+        .logo_recursiva{
+            margin-top: 0;
             display: block;
         }
 

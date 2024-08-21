@@ -38,6 +38,7 @@ export const Container = styled.div`
         flex-direction: column;
         height: auto;
         width: auto;
+        margin-bottom:40vw;
 
         .image{
             display: none;
