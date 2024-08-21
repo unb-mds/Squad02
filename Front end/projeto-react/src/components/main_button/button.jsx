@@ -23,8 +23,9 @@ export const Container = styled.div`
             height: 100%; /* Ajusta a altura da imagem para ocupar toda a altura do botão */
     
         }
-        .logo2{
+        .logo_recursiva{
             display: none;
+
         }
     @media (max-width: 700px) {
         .logo{

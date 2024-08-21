@@ -10,7 +10,7 @@ const ButtonSearch = () => {
             <Link to="/">
                 <button id="logo" className="b">
                     <img src={logo} alt="logo" className="logo" />
-                    <img src={logo2} alt="logo2" />
+                    <img src={logo2} alt="logo_recursiva" className='logo_recursiva'/>
                 </button>
             </Link>
         </Container>

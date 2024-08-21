@@ -195,8 +195,8 @@ export const Container = styled.div`
         width: 70px;
         height: 70px;
         align-items: center;
-        margin-right: 1%
-        margin-top: -100%;
+        margin-right: 1%;
+        margin-top: 100%;
     }
 
     .imagem3_3 {
