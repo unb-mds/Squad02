@@ -18,7 +18,7 @@ export const Container = styled.div`
         all: unset;
         display: flex;
         flex-direction: column;
-        margin: 10vw 0;
+        margin: 45vw 0;
         height: auto;
         
         

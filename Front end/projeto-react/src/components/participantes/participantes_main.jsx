@@ -90,7 +90,7 @@ const Participantes = () => {
                                 <img className="imagem7" src="https://avatars.githubusercontent.com/u/122989369?v=4"/>
                             </a>
                             <br/>
-                            <img className="github_png" src={png_github}/>
+                            <img className="github_png3" src={png_github}/>
                             <p className='githubname7'>Sidts</p>
                             <p className='function7'>Desenvolvedor</p>
                             <p className='function3_1'>Back-End</p>

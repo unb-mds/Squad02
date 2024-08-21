@@ -8,7 +8,6 @@ export const Container = styled.div`
 
     .titulo{
         font-weight: 700;
-        font-size: 4rem;
         color: white;
         font-family: Poppins;
         padding-bottom: 5%;
@@ -16,386 +15,241 @@ export const Container = styled.div`
 
     .equipe1 {
         display: grid;
-        grid-template-columns: 300px 300px 300px 300px;
-        gap: 20px;
-
-        .quadrado1 {
-            background-color: #93CDAD;
-            width: 281px;
-            height: 387px;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        gap: 1vw;
+        .quadrado1, .quadrado2, .quadrado3, .quadrado4{
+            width: 18vw;
+            height: 24.4vw;
             border-radius: 10%;
         }
-
-        .nome1 {
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
+        
+        .quadrado1 {
+            background-color: #93CDAD;
+            
         }
 
-        .imagem1 {
+        .nome1,.nome2,.nome3,.nome4{
+            font-family: Poppins;
+            text-align: center;
+            margin-top: 1.5vw;
+            font-weight: 700;
+            font-size: 1.5vw;
+        }
+
+        .imagem1,.imagem2,.imagem3,.imagem4 {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 9vw;
+            height: auto;
             align-items: center;
             margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
+            margin-left: 4.5vw;
+            margin-top: 1.1vw;
         }
 
         .github_png {
-            width: 23px;
-            height: 23px;
-            margin-left: 70px;
-            margin-top: 20px;
+            width: 1.3vw;
+            height: auto;
+            margin-left: 4vw;
+            margin-top: 1vw;
         }
 
-        .githubname1 {
+        .githubname1,.githubname2,.githubname3,.githubname4{
             font-family: Poppins;
             font-weight: 600;
-            height: 25px;
-            transform: translate(35%, -105%);
+            height: 1.3vw;
+            font-size: 1vw;
+            transform: translate(6vw, -1.4vw);
         }
 
-        .function1 {
+        .function1,.function2,.function3,.function4{
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(30%, -105%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .quadrado2 {
             background-color: #874FD4;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
+            
 
-        }
-        .nome2{
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
         }
 
         .imagem2{
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 9vw;
+            height: auto;
             align-items: center;
             margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
+            margin-left: 4.5vw;
+            margin-top: 1.1vw; 
         }
 
-        .githubname2{
-            font-family: Poppins;
-            font-weight: 600;
-            height: 25px;
-            transform: translate(35%, -105%);
-        }
+        
 
-        .function2{
-            font-family: Poppins;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 18px;
-            transform: translate(30%, -105%);
-        }
+        
 
         .quadrado3{
             background-color: #FFCA00;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
+            
         }
-        .nome3{
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
-        }
+        
 
-        .imagem3{
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            align-items: center;
-            margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
-        }
+        
 
         .github_png1 {
-            width: 23px;
-            height: 23px;
-            margin-left: 90px;
-            margin-top: 20px;
+            width: 1.3vw;
+            height: auto;
+            margin-left: 4vw;
+            margin-top: 1vw;
         }
 
-        .githubname3{
-            font-family: Poppins;
-            font-weight: 600;
-            height: 25px;
-            transform: translate(43%, -105%);
-        }
+        
 
-        .function3{
-            font-family: Poppins;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 18px;
-            transform: translate(27%, -100%);
-        }
+        
         .function3_1{
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(35%, -100%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .quadrado4 {
             background-color: #FFEFD6;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
+            
         }
 
-        .nome4 {
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
-        }
+    
 
-        .imagem4 {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            align-items: center;
-            margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
-        }
+        
 
         .github_png2 {
-            width: 23px;
-            height: 23px;
-            margin-left: 50px;
-            margin-top: 20px;
+            width: 1.3vw;
+            height: auto;
+            margin-left: 4vw;
+            margin-top: 1vw;
         }
 
-        .githubname4 {
-            font-family: Poppins;
-            font-weight: 600;
-            height: 25px;
-            transform: translate(35%, -105%);
+        
         }
 
-        .function4 {
-            font-family: Poppins;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 18px;
-            transform: translate(30%, -100%);
-        }
+        
 
-    }
+    
     
     .equipe2 {
         display: grid;
-        grid-template-columns: 300px 300px 300px 300px;
-        gap: 20px;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        gap: 1vw;
 
-        .quadrado5 {
+        .quadrado5, .quadrado6, .quadrado7, .quadrado8{
             background-color: #FFCA00;
-            width: 281px;
-            height: 387px;
+            width: 18vw;
+            height: 24.4vw;
             border-radius: 10%;
+            
         }
 
-        .nome5 {
+        .nome5,.nome6,.nome7 {
             font-family: Poppins;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 1.5vw;
             font-weight: 700;
-            font-size: 26px;
+            font-size: 1.5vw;
         }
 
-        .imagem5 {
+        .imagem5,.imagem6,.imagem7 {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 9vw;
+            height: auto;
             align-items: center;
             margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
+            margin-left: 4.5vw;
+            margin-top: 1.1vw;
         }
 
         .github_png2 {
-            width: 23px;
-            height: 23px;
-            margin-left: 48px;
-            margin-top: 20px;
+            width: 1.3vw;
+            height: auto;
+            margin-left: 4vw;
+            margin-top: 1vw;
         }
 
-        .githubname5 {
+        .githubname5,.githubname6,.githubname7 {
             font-family: Poppins;
             font-weight: 600;
-            height: 25px;
-            transform: translate(27%, -105%);
+            height: 1.3vw;
+            font-size: 1vw;
+            transform: translate(6vw, -1.4vw);
         }
 
-        .function5 {
+        .function5,.function6,.function7 {
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(30%, -100%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .function3_1 {
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(35%, -100%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .quadrado6 {
             background-color: #FFEFD6;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
+            
         }
 
-        .nome6 {
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
-        }
-
-        .imagem6 {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            align-items: center;
-            margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
-        }
 
         .github_png3 {
-            width: 23px;
-            height: 23px;
-            margin-left: 83px;
-            margin-top: 20px;
+            width: 1.3vw;
+            height: auto;
+            margin-left: 4vw;
+            margin-top: 1vw;
         }
 
-        .githubname6 {
-            font-family: Poppins;
-            font-weight: 600;
-            height: 25px;
-            transform: translate(40%, -105%);
-        }
-
-        .function6 {
-            font-family: Poppins;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 18px;
-            transform: translate(35%, -100%);
-        }
+        
 
         .function3_12 {
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(38%, -100%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .quadrado7 {
             background-color: #874FD4;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
+            
         }
-
-        .nome7 {
-            font-family: Poppins;
-            text-align: center;
-            margin-top: 30px;
-            font-weight: 700;
-            font-size: 26px;
-        }
-
-        .imagem7 {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            align-items: center;
-            margin: auto;
-            margin-left: 70px;
-            margin-top: 20px;
-        }
-
-        .github_png {
-            width: 23px;
-            height: 23px;
-            margin-left: 90px;
-            margin-top: 10px;
-        }
-
-        .githubname7 {
-            font-family: Poppins;
-            font-weight: 600;
-            height: 25px;
-            transform: translate(45%, -100%);
-        }
-
-        .function7 {
-            font-family: Poppins;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 18px;
-            transform: translate(30%, -80%);
-        }
+    
 
         .function3_1 {
             font-family: Poppins;
             font-weight: 400;
             font-style: italic;
-            font-size: 18px;
-            transform: translate(35%, -80%);
+            font-size: 0.8vw;
+            transform: translate(6vw, -1.2vw);
         }
 
         .quadrado8 {
             background-color: #874FD4;
-            width: 281px;
-            height: 387px;
-            border-radius: 10%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+            
+       }
 
-        .alunos {
+       .alunos {
             font-family: Poppins;
             text-align: center;
-            margin-top: 90px;
-            font-weight: 00;
-            font-size: 15px;
+            margin-top: 4.5vw;
+            font-weight: 700;
+            font-size: 0.8vw;
             display: flex;
-            transform: translate(40%, 135%);
+            transform: translate(7.5vw, 1.5vw);
             font-style: italic;
 
         }
@@ -405,19 +259,19 @@ export const Container = styled.div`
             font-family: Poppins;
             text-align: center;
             font-weight: 600;
-            height: 50px;
-            font-size: 40px;
-            transform: translate(0%, 30%);
+            height: 4vw;
+            font-size: 2vw;
+            transform: translate(0, 1vw);
         }
 
         .function8 {
             font-family: Poppins;
             text-align: center;
             font-weight: 400;
-            font-size: 18px;
-            width: 200px;
-            transform: translate(22%, 40%);
-        }
+            font-size: 1vw;
+            width: 12;vw;
+            transform: translate(0vw, 2vw);
+
 
     }
 
