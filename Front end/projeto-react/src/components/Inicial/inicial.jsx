@@ -2,6 +2,22 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 52vw;
+    margin-top: 4vw;
+
+.fundo{
+    position: absolute;
+    margin: 0 auto;
+    
+    height: 36.4vw;
+}
+.fundo2{
+    display: none;
+}
+
     .conteudo{
         margin: 4vw auto 0 auto;
         display: flex;
@@ -9,12 +25,12 @@ export const Container = styled.div`
         flex-direction: row-reverse;
         height: 45vw;
         width: 70%;
-        background-image: url('../../../assets/images/Component 7.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+        
+        
         
     }
     .textos{
+        position: relative;
         display: flex;
         flex-direction: column;
         margin-top: 13vw;
@@ -23,6 +39,7 @@ export const Container = styled.div`
     }
     
     .principal_text{
+        
         font-size: 2.5vw;
         text-align: center;
         height: auto;
@@ -45,6 +62,7 @@ export const Container = styled.div`
     }
     
     .mulher{
+        position: relative;
         margin: 9.8vw auto;
         width: 30vw;
         height: auto;
@@ -56,25 +74,33 @@ export const Container = styled.div`
         display: none;
     }
     @media (max-width:700px){
+        margin-top: 30vw;
+        margin-bottom: 90vw;
+        .fundo{
+            display: none;
+        }
+        .fundo2{
+            display: block;
+            position: absolute;
+            margin: 0 auto 40vw auto;
+            height: 91vw;
+
+        }
         
 
         .conteudo{
             all: unset;
-            margin: 2vw auto;
+            margin: 1.2vw auto;
             display: flex;
             flex-direction: column;
-            
             align-items: center;
-            height: 91vw;
-            width: auto;
-            background-image: url('../../../assets/images/Component 6.png');
-            background-size: cover;
-            background-repeat: no-repeat;
+            position: relative;
         }
 
         .textos{
         
         all: unset;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -112,8 +138,8 @@ export const Container = styled.div`
         
         }
         .mulher2{
+            position: relative;
             display: block;
-            margin-top: 1vw;
             width: 45vw;
             height: auto;
         }
