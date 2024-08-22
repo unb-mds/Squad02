@@ -9,4 +9,13 @@ def buscarValor(arquivo, regex):
     with open(arquivo, 'r', encoding='utf-8') as f:
         conteudo = f.read()
         matches = re.findall(regex, conteudo, re.IGNORECASE)
-        return [float(valor.replace(',', '.')) for valor in matches]
+        
+        valores = []
+        for valor in matches:
+            valor = valor.replace('.', '').replace(',', '.')
+            try:
+                valores.append(float(valor))
+            except ValueError:
+                print(f'Valor inválido encontrado e ignorado: {valor}')
+        
+        return valores
