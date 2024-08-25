@@ -1,10 +1,17 @@
 import os
 from collections import defaultdict
-from search import buscarValor
-from name import verNomeMunicipio
-from schedule import meseano
-from regex import regexMunicipio
-from regexGeral import regexMunicipio2
+try:
+    from .search import buscarValor
+    from .name import verNomeMunicipio
+    from .schedule import meseano
+    from .regex import regexMunicipio
+    from .regexGeral import regexMunicipio2
+except ImportError:
+    from search import buscarValor
+    from name import verNomeMunicipio
+    from schedule import meseano
+    from regex import regexMunicipio
+    from regexGeral import regexMunicipio2
 
 def agrupar(pasta):
     if not os.path.isdir(pasta):
