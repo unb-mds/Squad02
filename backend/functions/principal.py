@@ -1,6 +1,11 @@
-from group import agrupar
-from sums import salvarSomas
-from percentual import calcularPercentualCultura
+try:
+    from .group import agrupar
+    from .sums import salvarSomas
+    from .percentual import calcularPercentualCultura
+except ImportError:
+    from group import agrupar
+    from sums import salvarSomas
+    from percentual import calcularPercentualCultura
 
 def principal():
     pasta_arquivos = "./.gitignore/arquivos_renomeados"

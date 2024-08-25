@@ -1,7 +1,10 @@
 import os
 import json
 from collections import defaultdict
-from format import formatar
+try:
+    from .format import formatar
+except ImportError:
+    from format import formatar
 
 def salvarSomas(pasta, somasTotais):
     if not os.path.exists(pasta):
