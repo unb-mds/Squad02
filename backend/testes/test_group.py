@@ -26,25 +26,32 @@ class TestAgrupar(unittest.TestCase):
         mock_regexMunicipio.side_effect = lambda x: 'regex1' if x == 'Municipio58' else 'regex2'
         mock_buscarValor.side_effect = lambda x, y: [100.0, 200.0] if y == 'regex1' else [300.0, 400.0]
 
-        # Esperado
+        resultado = agrupar('caminho/para/pasta')
+
+        # Estrutura esperada com valores "cultura" e "total"
         esperado = {
             'Municipio58': {
                 '2024': {
-                    '01': 300.0  # Soma de [100.0, 200.0]
+                    '01': {
+                        'cultura': 300.0,
+                        'total': 700.0
+                    }
                 }
             },
             'Municipio87': {
                 '2025': {
-                    '07': 700.0  # Soma de [300.0, 400.0]
+                    '07': {
+                        'cultura': 700.0,
+                        'total': 700.0
+                    }
                 }
             }
-        } 
+        }
 
     
 
-        # Executando a função e verificando o resultado
-        resultado = agrupar('caminho/para/pasta')
-        self.assertEqual(resultado, esperado)
+        
+        self.assertEqual(dict(resultado), esperado)
 
 if __name__ == '__main__':
     unittest.main()
