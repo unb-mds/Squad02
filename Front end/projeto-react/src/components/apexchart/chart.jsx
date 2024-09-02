@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     align-items: center;
     .t1{
         

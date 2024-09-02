@@ -18,7 +18,7 @@ export const NavBar = styled.div`
     .b1, .b2, .b3 {
         cursor: pointer;
         background-color: #7A41C9;
-        color: #000000;
+        color: #ffffff;
         font-size: 20px;
         padding: 10px;
         border: none;
@@ -60,7 +60,7 @@ export const Container = styled.div`
 
 export const StyledLink = styled(Link)`
     background-color: #7A41C9;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
     padding: 10px;
     border: none;
