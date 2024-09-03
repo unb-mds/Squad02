@@ -12,10 +12,10 @@ const Grafico = () => {
             <Navbar/>
             <Chart />
             
-            <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px', fontFamily: 'Poppins', color: '#fff',}} className='t1'>
+            <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '1vw', fontFamily: 'Poppins', color: '#fff',}} className='t1'>
                 Projeto criado por alunos da Universidade de Brasília na disciplina de Métodos de Desenvolvimento de Software ensinada pela docente Carla Rocha.
             </p>
-            <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '14px', fontFamily: 'Poppins', color: '#fff' }}className='t2'>
+            <p style={{ textAlign: 'center', marginTop: '5px', fontSize: '1vw', fontFamily: 'Poppins', color: '#fff' }}className='t2'>
                 Desenvolvido por: André Maia, Isabelle Costa, José Vinicius, Pedro Faria, Pedro Goiz, Enrico Zoratto e Mateus Cavalcante.
             </p>
             <img src={imagem} alt="Descrição da imagem" style={{ maxWidth: '10%', height: 'auto', display: 'block', margin: 'auto', marginTop: '20px' }} className='img'/>

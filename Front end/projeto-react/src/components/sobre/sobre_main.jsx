@@ -11,11 +11,7 @@ const Sobre = () => {
                 <img src={fundo} alt="fundo responsivo" className="imagem_fundo"/>
                 <About>
                     <p className="about_text_title">Sobre</p>
-                    <p className="about_text">Cultura Transparente é uma inovadora ferramenta desenvolvida como parte do curso de
-                        Métodos de Desenvolvimento de Software, com o objetivo de simplificar e automatizar o processo de extração
-                        de dados de licitações publicadas no Diário Oficial do Estado do Rio de Janeiro. Este projeto surge como
-                        uma solução eficaz para profissionais, empresas e órgãos públicos que necessitam acompanhar licitações de
-                        maneira eficiente e oportuna.</p>
+                    <p className="about_text">A Cultura Transparente é uma ferramenta desenvolvida no curso de Métodos de Desenvolvimento de Software da Universidade de Brasília para simplificar a extração de dados de licitações do Diário Oficial do Estado do Rio de Janeiro.</p>
                 </About>
             </Container>
         </div>

@@ -35,6 +35,7 @@ export const Container = styled.div`
         .logo_recursiva{
             margin-top: 0;
             display: block;
+            height: 13vw;
         }
 
         
