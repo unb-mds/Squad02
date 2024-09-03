@@ -26,17 +26,17 @@ export default function CombinedChart() {
 
                 for (let i = 1; i <= 12; i++) {
                     const month = String(i).padStart(2, '0');
-                    let valueCultura = municipalityData[month]?.cultura || "0.00";
-                    let valueTotal = municipalityData[month]?.total || "0.00";
+                    const valueCultura = parseFloat(municipalityData[month]?.cultura.replace(/\.(?=.*\.)/g, '').replace(',', '.')) || 0;
+                    const valueTotal = parseFloat(municipalityData[month]?.total.replace(/\.(?=.*\.)/g, '').replace(',', '.')) || 0;
 
-                    let formattedValueCultura = parseFloat(valueCultura.replace(/\.(?=.*\.)/g, '').replace(',', '.')) / 1000000;
-                    let formattedValueTotal = parseFloat(valueTotal.replace(/\.(?=.*\.)/g, '').replace(',', '.')) / 1000000;
+                    const formattedValueCultura = valueCultura / 1000000; // Converter para milhões
+                    const formattedValueTotal = valueTotal / 1000000; // Converter para milhões
 
-                    culturaData.push(isNaN(formattedValueCultura) ? 0 : formattedValueCultura);
-                    totalData.push(isNaN(formattedValueTotal) ? 0 : formattedValueTotal);
+                    culturaData.push(formattedValueCultura);
+                    totalData.push(formattedValueTotal);
 
-                    culturaTotal += parseFloat(valueCultura.replace(/\.(?=.*\.)/g, '').replace(',', '.'));
-                    totalGeral += parseFloat(valueTotal.replace(/\.(?=.*\.)/g, '').replace(',', '.'));
+                    culturaTotal += valueCultura;
+                    totalGeral += valueTotal;
                 }
 
                 // Calcular o ranking de municípios com base nos dados de cultura
@@ -46,15 +46,15 @@ export default function CombinedChart() {
                     const percentage = (culturaMunicipioTotal / totalMunicipioGeral) * 100 || 0;
                     return {
                         municipality,
-                        culturaTotal: culturaMunicipioTotal / 1000000, // Converter para milhões (perguntar para o enrico se tá certo)
+                        culturaTotal: culturaMunicipioTotal / 1000000, // Converter para milhões
                         percentage: percentage.toFixed(2), // Arredondar para 2 casas decimais
                     };
                 });
 
-
+                // Ordenar o ranking por gastos com cultura em ordem decrescente
                 rankingData.sort((a, b) => b.culturaTotal - a.culturaTotal);
 
-
+                // Atualizar os dados do gráfico de pizza
                 const culturaPercent = (culturaTotal / totalGeral) * 100;
                 setPieSeries([culturaPercent, 100 - culturaPercent]);
 
@@ -127,7 +127,7 @@ export default function CombinedChart() {
                 return `${val.toFixed(2)} M R$`;
             }
         },
-        colors: ['#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B'], // Ajuste das cores para o primeiro gráfico
+        colors: ['#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B', '#FFCA00', '#874FD4', '#64BA8B'],
         grid: {
             padding: { left: 20, right: 20 }
         },
@@ -224,30 +224,28 @@ export default function CombinedChart() {
                 width='100%'
                 height={500}
             />
+            <div style={styles.pieChartContainer}>
+                <h3 style={styles.pieChartTitle}>
+                    Percentual de Gastos em Cultura vs Total de {selectedMunicipality} em {selectedYear}
+                </h3>
+                <ApexCharts
+                    options={pieOptions}
+                    series={pieSeries}
+                    type='pie'
+                    width={380}
+                />
+            </div>
             <div style={styles.rankingContainer}>
-                <div style={styles.rankingListContainer}>
-                    <h2 style={styles.legend}>
-                        Ranking dos Municípios que mais investiram em cultura em {selectedYear}
-                    </h2>
-                    <ul style={styles.rankingList}>
-                        {ranking.map((item, index) => (
-                            <li key={index} style={styles.rankingItem}>
-                                <strong>{index + 1}. {item.municipality}</strong> - R$ {item.culturaTotal.toFixed(2)}M  - {item.percentage}% do valor total das licitações
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div style={styles.pieChart}>
-                    <h3 style={styles.pieChartTitle}>
-                        Percentual de Gastos em Cultura vs Total de {selectedMunicipality} em {selectedYear}
-                    </h3>
-                    <ApexCharts
-                        options={pieOptions}
-                        series={pieSeries}
-                        type='pie'
-                        width={380}
-                    />
-                </div>
+                <h2 style={styles.legend}>
+                    Ranking dos Municípios que mais investiram em cultura em {selectedYear}
+                </h2>
+                <ul style={styles.rankingList}>
+                    {ranking.map((item, index) => (
+                        <li key={index} style={styles.rankingItem}>
+                            <strong>{index + 1}. {item.municipality}</strong> - R$ {item.culturaTotal.toFixed(2)}M  - {item.percentage}% do valor total das licitações
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
@@ -283,15 +281,12 @@ const styles = {
         fontFamily: 'Poppins',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     },
-    rankingContainer: {
+    pieChartContainer: {
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        gap: '40px',
+        flexDirection: 'column',
+        alignItems: 'center',
         marginTop: '40px',
-    },
-    pieChart: {
-        textAlign: 'center',
+        marginBottom: '60px',  // Aumenta a distância entre o gráfico de pizza e o ranking
     },
     pieChartTitle: {
         fontSize: '18px',
@@ -300,9 +295,10 @@ const styles = {
         color: '#fff',
         marginBottom: '10px',
     },
-    rankingListContainer: {
-        flex: 0.5,
-        textAlign: 'left',
+    rankingContainer: {
+        textAlign: 'center',
+        margin: '0 auto',
+        maxWidth: '800px',
     },
     legend: {
         marginBottom: '10px',
