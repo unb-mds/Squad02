@@ -5,12 +5,15 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 
     .titulo{
         font-weight: 700;
         color: white;
         font-family: Poppins;
         padding-bottom: 5%;
+        font-size: ;
     }
 
     .equipe1 {
@@ -37,6 +40,7 @@ export const Container = styled.div`
         }
 
         .imagem1,.imagem2,.imagem3,.imagem4 {
+            position: absolute;
             border-radius: 50%;
             width: 9vw;
             height: auto;
@@ -49,8 +53,8 @@ export const Container = styled.div`
         .github_png {
             width: 1.3vw;
             height: auto;
-            margin-left: 4vw;
-            margin-top: 1vw;
+            position: absolute;
+            margin: 10vw 0 0 4vw;
         }
 
         .githubname1,.githubname2,.githubname3,.githubname4{
@@ -58,7 +62,7 @@ export const Container = styled.div`
             font-weight: 600;
             height: 1.3vw;
             font-size: 1vw;
-            transform: translate(6vw, -1.4vw);
+            margin: 10vw 0 0 6vw;
         }
 
         .function1,.function2,.function3,.function4{
@@ -66,7 +70,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 0 0 0 6vw;
         }
 
         .quadrado2 {
@@ -100,8 +104,8 @@ export const Container = styled.div`
         .github_png1 {
             width: 1.3vw;
             height: auto;
-            margin-left: 4vw;
-            margin-top: 1vw;
+            position: absolute;
+            margin: 10vw 0 0 4vw;
         }
 
         
@@ -112,7 +116,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 0 0 0 6vw;
         }
 
         .quadrado4 {
@@ -127,8 +131,8 @@ export const Container = styled.div`
         .github_png2 {
             width: 1.3vw;
             height: auto;
-            margin-left: 4vw;
-            margin-top: 1vw;
+            position: absolute;
+            margin: 10vw 0 0 4vw;
         }
 
         
@@ -161,10 +165,10 @@ export const Container = styled.div`
 
         .imagem5,.imagem6,.imagem7 {
             border-radius: 50%;
+            position: absolute;
             width: 9vw;
             height: auto;
             align-items: center;
-            margin: auto;
             margin-left: 4.5vw;
             margin-top: 1.1vw;
         }
@@ -172,8 +176,8 @@ export const Container = styled.div`
         .github_png2 {
             width: 1.3vw;
             height: auto;
-            margin-left: 4vw;
-            margin-top: 1vw;
+            position: absolute;
+            margin: 10vw 0 0 4vw;
         }
 
         .githubname5,.githubname6,.githubname7 {
@@ -181,7 +185,7 @@ export const Container = styled.div`
             font-weight: 600;
             height: 1.3vw;
             font-size: 1vw;
-            transform: translate(6vw, -1.4vw);
+            margin: 10vw 0 0 6vw;
         }
 
         .function5,.function6,.function7 {
@@ -189,7 +193,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 0 0 0 6vw;
         }
 
         .function3_1 {
@@ -197,7 +201,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 1vw 0 0 0vw;
         }
 
         .quadrado6 {
@@ -209,8 +213,8 @@ export const Container = styled.div`
         .github_png3 {
             width: 1.3vw;
             height: auto;
-            margin-left: 4vw;
-            margin-top: 1vw;
+            position: absolute;
+            margin: 10vw 0 0 4vw;
         }
 
         
@@ -220,7 +224,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 0 0 0 6vw;
         }
 
         .quadrado7 {
@@ -234,7 +238,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-style: italic;
             font-size: 0.8vw;
-            transform: translate(6vw, -1.2vw);
+            margin: 0 0 0 6vw;
         }
 
         .quadrado8 {
@@ -245,11 +249,11 @@ export const Container = styled.div`
        .alunos {
             font-family: Poppins;
             text-align: center;
-            margin-top: 4.5vw;
+            margin-top: 6vw;
             font-weight: 700;
             font-size: 0.8vw;
             display: flex;
-            transform: translate(7.5vw, 1.5vw);
+            margin-left: 7.5vw;
             font-style: italic;
 
         }
@@ -261,7 +265,6 @@ export const Container = styled.div`
             font-weight: 600;
             height: 4vw;
             font-size: 2vw;
-            transform: translate(0, 1vw);
         }
 
         .function8 {
@@ -269,26 +272,5 @@ export const Container = styled.div`
             text-align: center;
             font-weight: 400;
             font-size: 1vw;
-            width: 12;vw;
-            transform: translate(0vw, 2vw);
-
-
-    }
-
-        @media (max-width:700px){
-            overflow-x: hidden;
-            .equipe1{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .equipe2{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-                
-            }
-        
-`
+        }      
+}`

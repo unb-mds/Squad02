@@ -5,6 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10vw;
 
     .textos{
         display: flex;
@@ -15,23 +16,25 @@ export const Container = styled.div`
     }
 
     .about_text_title{
-        padding-top: 0%; 
+        
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 3.7vw;
         color: white;
         font-family: Poppins;
         padding-bottom: 0;
+        text-align: center;
     }
 
     .about_text{
-        padding-top: 0; 
+        
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 1.5vw;
         color: white;
         font-family: Poppins;
         text-align: center;
-        max-width: 70%;
-        padding-bottom: 5%;
+        width: 30vw;
+        height: 20vw;
+        
     }
 
     .firstline{
@@ -40,6 +43,7 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        height: 10vw;
     }
 
     .fifthline{
@@ -48,13 +52,14 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        height: 10vw;
         margin-bottom: 5%;
     }
 
     .imagem1_0 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 2%;
@@ -62,8 +67,8 @@ export const Container = styled.div`
 
     .imagem1_2 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 15%;
@@ -72,8 +77,8 @@ export const Container = styled.div`
 
     .imagem1_3 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 15%;
@@ -82,8 +87,8 @@ export const Container = styled.div`
 
     .imagem1_4 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 15%;
@@ -96,6 +101,7 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        height: 10vw;
         margin-top: 0%;
     }
 
@@ -105,14 +111,15 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        height: 10vw;
         margin-top: 0%;
         
     }
 
     .imagem2_0 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 15%;
@@ -121,8 +128,8 @@ export const Container = styled.div`
 
     .imagem2_2 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 5%;
@@ -131,8 +138,8 @@ export const Container = styled.div`
 
     .imagem2_3 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 7%;
@@ -145,6 +152,7 @@ export const Container = styled.div`
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        height: 35vw;
         margin-top: 2%;
     }
 
@@ -172,8 +180,8 @@ export const Container = styled.div`
 
     .imagem3_0 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 20%;
@@ -182,8 +190,8 @@ export const Container = styled.div`
 
     .imagem3_1 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 45%;
@@ -192,8 +200,8 @@ export const Container = styled.div`
 
     .imagem3_2 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin-right: 1%;
         margin-top: 100%;
@@ -201,52 +209,14 @@ export const Container = styled.div`
 
     .imagem3_3 {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 6vw;
+        height: auto;
         align-items: center;
         margin: auto;
         margin-left: 35%;
         margin-top: -2%;
     }
 
-    @media (max-width: 700px){
-        overflow-x: hidden;
-        .about_text_title{
-            overflow-x: hidden;
-            all: unset;
-            
-            font-weight: 700;
-            font-size: 8vw;
-            color: white;
-            font-family: Poppins;
-            
-            
-        }
-
-        .about_text{
-            overflow-x: hidden;
-            all: unset;
-            font-weight: 300;
-            font-size: 4vw;
-            color: white;
-            font-family: Poppins;
-            
-            text-justify
-
-            margin: auto;
-            width: 30vw;
-        }
-        .textos{
-            overflow-x: hidden;
-            all: unset;
-            width: 70vw;
-            margin:0 auto;
-            
-        }
-        .imagem1_0,.imagem1_2, .imagem1_3,.imagem1_4, .fourthline, .imagem2_0 , .imagem2_2 , .imagem2_3 , .esquerda,  .direita,.imagem3_1,  .imagem3_2 ,.imagem3_3{
-            display: none;
-        }
-
-    }
+   
 
 `

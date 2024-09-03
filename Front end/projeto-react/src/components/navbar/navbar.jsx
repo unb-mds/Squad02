@@ -44,7 +44,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #252424;
-    height: 70.5px;
+    height: auto;
     width: 100%;
     padding: 0 20px; 
 

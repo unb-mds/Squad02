@@ -9,7 +9,7 @@ const Participantes = () => {
                     <div className="equipe1">
                         <div className='quadrado1'>
                             <p className="nome1">André <br/>Maia</p>
-                            <a href="//github.com/andre-maia51" target="_blank">
+                            <a href="//github.com/andre-maia51" target="_blank" className="ancora">
                                 <img className="imagem1" src="https://avatars.githubusercontent.com/u/76632983?v=4"/>
                             </a>
                             <br/>
@@ -20,7 +20,7 @@ const Participantes = () => {
 
                         <div className="quadrado2">
                             <p className="nome2">Mateus<br/>Cavalcante</p>
-                            <a href="//github.com/mateuscavati" target="_blank">
+                            <a href="//github.com/mateuscavati" target="_blank" className="ancora">
                                 <img className="imagem2" src="https://avatars.githubusercontent.com/u/117764744?v=4"/>
                             </a>
                             <br/>
@@ -31,7 +31,7 @@ const Participantes = () => {
 
                         <div className="quadrado3">
                             <p className="nome3">Pedro<br/>Goiz</p>
-                            <a href="//github.com/Goizzz" target="_blank">
+                            <a href="//github.com/Goizzz" target="_blank" className="ancora">
                                 <img className="imagem3" src="https://avatars.githubusercontent.com/u/111159833?v=4"/>
                             </a>
                             <br/>
@@ -43,7 +43,7 @@ const Participantes = () => {
 
                         <div className="quadrado4">
                             <p className="nome4">Isabelle<br/>Costa</p>
-                            <a href="//github.com/isacostaf" target="_blank">
+                            <a href="//github.com/isacostaf" target="_blank" className="ancora">
                                 <img className="imagem4" src="https://avatars.githubusercontent.com/u/139937524?v=4"/>
                             </a>
                             <br/>
@@ -62,7 +62,7 @@ const Participantes = () => {
 
                         <div className="quadrado5">
                             <p className="nome5">José<br/>Vinicius</p>
-                            <a href="//github.com/JoseViniciusQueiroz" target="_blank">
+                            <a href="//github.com/JoseViniciusQueiroz" target="_blank" className="ancora">
                                 <img className="imagem5" src="https://avatars.githubusercontent.com/u/125223478?v=4"/>
                             </a>
                             <br/>
@@ -74,7 +74,7 @@ const Participantes = () => {
 
                         <div className="quadrado6">
                             <p className="nome6">Pedro<br/>Faria</p>
-                            <a href="//github.com/PhFariaa" target="_blank">
+                            <a href="//github.com/PhFariaa" target="_blank" className="ancora2">
                                 <img className="imagem6" src="https://avatars.githubusercontent.com/u/126727677?v=4"/>
                             </a>
                             <br/>
@@ -86,7 +86,7 @@ const Participantes = () => {
 
                         <div className="quadrado7">
                             <p className="nome7">Enrico<br/>Zoratto</p>
-                            <a href="//github.com/sidts" target="_blank">
+                            <a href="//github.com/sidts" target="_blank" className="ancora2">
                                 <img className="imagem7" src="https://avatars.githubusercontent.com/u/122989369?v=4"/>
                             </a>
                             <br/>
