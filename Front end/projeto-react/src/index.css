@@ -12,3 +12,11 @@ body {
   font-family: 'Newake';
   src: url(../assets/fonts/NewakeFont-Demo.otf);
 }
+
+@media (max-width: 700px) {
+  .apexcharts-datalabel {
+      writing-mode: vertical-lr;
+      text-anchor: middle;
+  }
+}
+

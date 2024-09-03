@@ -142,14 +142,16 @@ export default function CombinedChart() {
                 options: {
                     plotOptions: {
                         bar: {
-                            horizontal: true,
+                            horizontal: false, // Manter vertical mesmo abaixo de 700px
                         }
                     },
                     dataLabels: {
                         style: { fontSize: '10px' },
                         orientation: 'vertical',
                         textAnchor: 'middle',
+                        offsetY: 17,
                     },
+                    
                 }
             }
         ]
