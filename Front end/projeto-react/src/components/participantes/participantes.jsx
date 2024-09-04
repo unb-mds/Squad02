@@ -273,4 +273,24 @@ export const Container = styled.div`
             font-weight: 400;
             font-size: 1vw;
         }      
+
+        @media (max-width: 700px) {
+            .github_png3, .github_png2, .github_png1, .github_png {
+            width: 1.3vw;
+            height: auto;
+            position: absolute;
+            margin: 7vw 0 0 4vw;
+        }
+
+        
+        
+        .githubname5,.githubname6,.githubname7,.githubname1,.githubname2,.githubname3,.githubname4 {
+            font-family: Poppins;
+            font-weight: 600;
+            height: 1.3vw;
+            font-size: 1vw;
+            margin: 7vw 0 0 6vw;
+        }
+        
+        }
 }`
