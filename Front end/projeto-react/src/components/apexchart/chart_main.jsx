@@ -151,7 +151,7 @@ export default function CombinedChart() {
                         textAnchor: 'middle',
                         offsetY: 17,
                     },
-                    
+
                 }
             }
         ]
@@ -240,13 +240,20 @@ export default function CombinedChart() {
                     Ranking dos Municípios que mais investiram em cultura em {selectedYear}
                 </h2>
                 <ul style={styles.rankingList}>
-                    {ranking.map((item, index) => (
-                        <li key={index} style={styles.rankingItem}>
-                            <strong>{index + 1}. {item.municipality}</strong> - R$ {item.culturaTotal.toFixed(2)}M  - {item.percentage}% do valor total das licitações
-                        </li>
-                    ))}
+                    {ranking.map((item, index) => {
+                        const formattedCulturaTotal = item.culturaTotal >= 1000
+                            ? `${(item.culturaTotal / 1000).toFixed(2)} B`
+                            : `${item.culturaTotal.toFixed(2)} M`;
+
+                        return (
+                            <li key={index} style={styles.rankingItem}>
+                                <strong>{index + 1}. {item.municipality}</strong> - R$ {formattedCulturaTotal} - {item.percentage}% do valor total das licitações
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
+
         </div>
     );
 }
